@@ -11,13 +11,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.mypet.R.id.buttonPlay
 
 class MainActivity : AppCompatActivity() {
-
+//Declaration of Buttons and Image.
     private lateinit var buttonPlay: Button
     private lateinit var buttonFood: Button
     private lateinit var buttonGroom: Button
     private lateinit var imageCat: ImageView
 
-
+//Values assigned to attributes describing the pet's condition. 
     private var hunger = 100
     private var clean = 100
     private var happy = 100
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         val ButtonFood = findViewById<Button>(R.id.buttonFood)
         val ButtonGroom = findViewById<Button>(R.id.buttonGroom)
 
-
+//If statements to assign the required values depending on the attributes value when added or subtracted.
         fun feedCat() {
 
             hunger += 10
@@ -68,6 +68,10 @@ class MainActivity : AppCompatActivity() {
         }
         updateUI()
 
+        /* The click of each attribute on the buttons they have been assigned to is to display the correct image 
+        in order to meet the name of the button  */
+
+        
         buttonPlay.setOnClickListener {
             playCat()
             updateUI()
@@ -91,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
+// To intialize the textViews to meet their values.
 
     private fun updateUI() {
         val textViewHappy = findViewById<TextView>(R.id.textViewHappy)
