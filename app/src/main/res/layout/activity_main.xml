@@ -8,6 +8,7 @@
     android:background="#4CAF50"
     tools:context=".MainActivity">
 
+    //This image was chosen due to its animated detail of the cat creating realistic facial features. 
 
     <ImageView
         android:id="@+id/imageCat"
